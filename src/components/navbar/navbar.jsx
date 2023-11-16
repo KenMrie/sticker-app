@@ -16,11 +16,11 @@ export const NavbarMenu = () => {
         <Container>
           <Navbar.Brand href="/">ステッカー</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link onClick={() => ("/")}>Home</Nav.Link>
-            <Nav.Link onClick={() => ("/stickers")}>
+            <Nav.Link onClick={() => goToLink("/")}>Home</Nav.Link>
+            <Nav.Link onClick={() => goToLink("/stickers")}>
               Available stickers
             </Nav.Link>
-            <Nav.Link onClick={() => ("/aboutUs")}>
+            <Nav.Link onClick={() => goToLink("/aboutUs")}>
               About us
             </Nav.Link>
           </Nav>
