@@ -7,20 +7,18 @@ import { useNavigate } from "react-router-dom";
 export const NavbarMenu = () => {
   const navigate = useNavigate();
 
-  const goToLink = (enlace) => {
-    navigate(enlace)
-  }
+
   return (
     <>
       <Navbar bg="success" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="/">ステッカー</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link onClick={() => goToLink("/")}>Home</Nav.Link>
-            <Nav.Link onClick={() => goToLink("/stickers")}>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/stickers">
               Available stickers
             </Nav.Link>
-            <Nav.Link onClick={() => goToLink("/aboutUs")}>
+            <Nav.Link href="/aboutUs">
               About us
             </Nav.Link>
           </Nav>
