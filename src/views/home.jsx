@@ -11,7 +11,6 @@ export const Home = () => {
         <NavbarMenu/>
         <h1> Info should be here </h1>
         <div className='d-flex align-items-center justify-content-center'>
-        <Loading/>
 
         </div>
     </>
