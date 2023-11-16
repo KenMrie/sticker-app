@@ -8,7 +8,7 @@ export const NavbarMenu = () => {
   const navigate = useNavigate();
 
   const goToLink = (enlace) => {
-    navigate(`/${enlace}`)
+    navigate(enlace)
   }
   return (
     <>
