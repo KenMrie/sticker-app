@@ -11,6 +11,7 @@ export const Home = () => {
         <Banner/>
         <NavbarMenu/>
         <CarouselHome/>
+        <h1> Funky title here </h1>
     </>
   )
 }

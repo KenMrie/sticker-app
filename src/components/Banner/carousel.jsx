@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import { carouselHomeInfo } from "../../configs/carouselhome/carouselhome";
 
 export const CarouselHome = () => {
-  console.log(carouselHomeInfo);
+
   return (
     <>
       <Carousel>
