@@ -10,10 +10,7 @@ export const Home = () => {
     <>
         <Banner/>
         <NavbarMenu/>
-        <h1> Info should be here </h1>
-        <div className='d-flex align-items-center justify-content-center'>
         <CarouselHome/>
-        </div>
     </>
   )
 }
