@@ -7,7 +7,6 @@ export const AboutUS = () => {
     <>
         <Banner/>
         <NavbarMenu/>
-        <h1> Im another test </h1>
     </>
   )
 }
