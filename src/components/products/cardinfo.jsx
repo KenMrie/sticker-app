@@ -14,17 +14,19 @@ export const CardInfo = ({ sticker }) => {
         More info
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+        show={show}
+        onHide={handleClose}
+      >
         <Modal.Header closeButton>
           <Modal.Title>{sticker.name}</Modal.Title>
         </Modal.Header>
-        <Modal.Body> 
-            <img src={sticker.image} className="modalImg"></img>
-            <p>
-            {sticker.description}
-            </p>
-          
-          </Modal.Body>
+        <Modal.Body>
+          <img src={sticker.image} className="modalImg"></img>
+          <p>{sticker.description}</p>
+        </Modal.Body>
         <Modal.Footer>
           <Button variant="primary" onClick={handleClose}>
             Buy

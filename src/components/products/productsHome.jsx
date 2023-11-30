@@ -9,7 +9,7 @@ export const ProductsHome = () => {
   return (
     <>
       <Navbar bg="success" data-bs-theme="dark" style={{ height: "50px" }} className="mb-4">
-        <Container className="justify-content-left">
+        <Container className="justify-content-center">
           <h1
             style={{
               color: "white",
