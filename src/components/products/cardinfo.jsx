@@ -28,7 +28,8 @@ export const CardInfo = ({ sticker }) => {
           <p>{sticker.description}</p>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="primary" onClick={handleClose}>
+          <h5>${(sticker.price).toFixed(2)}</h5>
+          <Button variant="success" onClick={null}>
             Buy
           </Button>
         </Modal.Footer>

@@ -82,7 +82,7 @@ export const Footer = () => {
             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
               <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
               <p>
-                <a href="#!" className="text-reset">
+                <a href="/aboutus" className="text-reset">
                   About Us
                 </a>
               </p>
