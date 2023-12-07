@@ -15,8 +15,8 @@ export const CardInfo = ({ sticker }) => {
       </Button>
 
       <Modal
-        aria-labelledby="contained-modal-title-vcenter"
         centered
+        aria-labelledby="contained-modal-title-vcenter"
         show={show}
         onHide={handleClose}
       >
@@ -24,7 +24,7 @@ export const CardInfo = ({ sticker }) => {
           <Modal.Title>{sticker.name}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <img src={sticker.image} className="modalImg"></img>
+          <img src={sticker.image} className="modalImg" />
           <p>{sticker.description}</p>
         </Modal.Body>
         <Modal.Footer>

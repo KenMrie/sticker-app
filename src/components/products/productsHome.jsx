@@ -1,7 +1,6 @@
-import { Cardz } from "./card";
 import { productInfo } from "../../configs/cards/cards.config";
 import React from "react";
-import { Navbar, Container, Row, Col, Button } from "react-bootstrap";
+import { Navbar, Container, Row, Col, Button, Card } from "react-bootstrap";
 
 export const ProductsHome = () => {
   const homeProducts = productInfo.slice(0, 3);
@@ -21,11 +20,21 @@ export const ProductsHome = () => {
         </Container>
       </Navbar>
 
-      <Container>
+      <div className="mx-4">
         <Row xs="auto" style={{ display: "flex", justifyContent: "center" }}>
           {homeProducts.map((sticker, index) => (
             <Col className="mb-3" key={index}>
-              <Cardz sticker={sticker} />
+              <Card className="shadow-sm" style={{ width: "14rem", height: "22rem" }}>
+        <Card.Img
+          variant="top"
+          src={sticker.image}
+          style={{ width: "100%", height: "200px", objectFit: "contain" }}
+        />
+        <Card.Body>
+          <Card.Title> {sticker.name} </Card.Title>
+          <Card.Text>{sticker.description}</Card.Text>
+        </Card.Body>
+      </Card>
             </Col>
           ))}
         </Row>
@@ -40,7 +49,7 @@ export const ProductsHome = () => {
             More stickers here
           </Button>
         </div>
-      </Container>
+      </div>
     </>
   );
 };

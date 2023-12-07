@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavbarMenu } from '../components/navbar/navbar'
-import { Products } from '../components/products/products';
+import { ProductsStickers } from '../components/products/productsStickers'
 import { Banner } from '../components/Banner/banner';
 import { Footer } from '../components/Footer/footer';
 
@@ -10,7 +10,7 @@ export const Stickers = () => {
     <>
         <Banner/>
         <NavbarMenu/>
-        <Products/>
+        <ProductsStickers/>
         <Footer/>
 
     </>

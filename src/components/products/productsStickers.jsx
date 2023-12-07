@@ -5,9 +5,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { productInfo } from "../../configs/cards/cards.config";
-import { Loading } from "../../components/loading/loading";
+import { Loading } from "../loading/loading";
 
-export const Products = () => {
+export const ProductsStickers = () => {
   const baseUrl = import.meta.env.VITE_APP_BASEURL;
   const [user, setUser] = useState();
   const [loading, setLoading] = useState(true);

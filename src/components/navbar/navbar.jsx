@@ -19,6 +19,9 @@ export const NavbarMenu = () => {
             <Nav.Link href="/stickers">
               Available stickers
             </Nav.Link>
+            <Nav.Link href="/products">
+              Products
+            </Nav.Link>
             <Nav.Link href="/aboutUs">
               About us
             </Nav.Link>

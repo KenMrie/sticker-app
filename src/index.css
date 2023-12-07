@@ -5,6 +5,9 @@
 .modalImg {
   float: left;
   margin-right: 10px;
+  height: 10rem;
+  width: 10rem;
+  object-fit: contain;
 }
 
 /* ------------------------------------------------------
