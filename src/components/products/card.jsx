@@ -1,8 +1,6 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import StickerPlaceholder from "../../assets/images/StickerPlaceholder.png";
-import { CardInfo } from "./cardinfo";
+import { CardInfo } from "../CardInfo modal/cardinfo";
 
 export const Cardz = ({ sticker }) => {
   return (
