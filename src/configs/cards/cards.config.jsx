@@ -5,7 +5,7 @@ import imagen4 from '../../assets/images/img4.jpeg'
 import imagen5 from '../../assets/images/img5.jpeg'
 import imagen6 from '../../assets/images/img6.jpeg'
 
-export const productInfo = [
+export const stickerInfo = [
     {
         image: imagen1,
         name: "Placeholder1",

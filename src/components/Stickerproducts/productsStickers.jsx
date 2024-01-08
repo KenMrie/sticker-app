@@ -4,7 +4,7 @@ import { Cardz } from "./card";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { productInfo } from "../../configs/cards/cards.config";
+import { stickerInfo } from "../../configs/cards/cards.config";
 import { Loading } from "../loading/loading";
 
 export const ProductsStickers = () => {
@@ -22,7 +22,6 @@ export const ProductsStickers = () => {
     try {
       const response = await axios.get(baseUrl, config);
       setUser(response.data);
-      console.log(response.data);
       setLoading(false);
     } catch (error) {
       console.error("Error al obtener los datos de la galería", error);
@@ -44,13 +43,16 @@ export const ProductsStickers = () => {
             </div>
           </>
         ) : (
+          <>
+          <h1 style={{paddingLeft: '12px'}}> Stickers </h1>
           <Row xs="auto" style={{ display: "flex", justifyContent: "center" }}>
-            {productInfo.map((sticker, index) => (
+            {stickerInfo.map((sticker, index) => (
               <Col className="mb-3" key={index}>
                 <Cardz sticker={sticker} />
               </Col>
             ))}
           </Row>
+          </>
         )}
       </Container>
     </>
